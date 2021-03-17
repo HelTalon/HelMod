@@ -1,0 +1,9 @@
+using Microsoft.Xna.Framework;
+using System.Collections.Generic;
+
+        public override void ModifyTooltips(List<TooltipLine> tooltips)
+        {
+            TooltipLine line = new TooltipLine(mod, "StelthoShard", "Designed by Stelthopuffa");
+            line.overrideColor = new Color(147, 114, 0);
+            tooltips.Add(line);
+        }

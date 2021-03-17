@@ -1,0 +1,29 @@
+Hel Mode stat scaling:
+
+Pre-HM Bosses:
+
+16 x Health
+
+6 x Defense
+
+3 x Damage
+
+
+Pre-Lunatic Cultist Bosses
+
+8 x Health
+
+3 x Defense
+
+1.5 x Damage
+
+
+
+
+Pre-Moonlord bosses
+
+4 x Health
+
+1.5 x Defense
+
+1.25 x Damage

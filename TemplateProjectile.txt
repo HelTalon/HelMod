@@ -1,0 +1,33 @@
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace HelMod.Projectiles.Melee.Swords
+{
+    public class TemplateProjectile : ModProjectile
+    {
+        public override void SetStaticDefaults()
+        {
+            DisplayName.SetDefault("Template Projectile");
+            Main.projFrames[projectile.type] = 4; //for projectile animation
+        }
+
+        public override void SetDefaults()
+        {
+            projectile.melee = true;
+            projectile.friendly = true;
+            projectile.hostile = false;
+
+            projectile.height = 32;
+            projectile.width = 30;
+
+            projectile.penetrate = 1;
+            projectile.timeLeft = 420;
+            projectile.tileCollide = false;
+            projectile.ignoreWater = true;
+
+            projectile.extraUpdates = 1;
+            projectile.alpha = 255;
+        }
+    }
+}

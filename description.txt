@@ -1,0 +1,15 @@
+The Hel Mod adds some new stuff I suppose. It's mostly a remake of the more stuff mod I made a while back that is now outdated.
+
+Sprites made by HelTalon and Stelthopuffa
+
+Update 0.1.2.0
+
+- Huge number of weapon & projectile re-works, re-balances and re-sprites
+- Added over 60 new items
+- Fixed certain projectile AIs & improved homing AIs
+- Increased drop rates of the Hel Shard and Steltho Shard (from 1 / 200 to 1 / 25)
+- Replaced the Broken Hero Bow with Hero Shards, dropped by all solar eclipse enemies
+- Reworked debuffs for somewhat better functionality, and re-added Hel's Curse's ability to deal continous damage to enemies.
+- Guns are now held in the correct positions
+
+To see all of the new stuff, check out the wiki (Mod Homepage).

@@ -1,0 +1,55 @@
+using Terraria;
+using Terraria.ID;
+using Terraria.ModLoader;
+
+namespace HelMod.Items.Weapons.Melee.Swords
+{
+    public class TemplateSword : ModItem
+    {
+        public override void SetStaticDefaults()
+        {
+            DisplayName.SetDefault("Template Sword");
+            Tooltip.SetDefault("Template Tooltip");
+        }
+
+        public override void SetDefaults()
+        {
+            item.melee = true;
+            item.useStyle = 1;
+
+            item.width = 32;
+            item.height = 32;
+
+            item.useTime = 10;
+            item.useAnimation = 10;
+            item.useTurn = false;
+            item.autoReuse = false;
+
+            item.damage = 20;
+            item.knockBack = 3f;
+
+            item.shoot = mod.ProjectileType("TemplateProjectile");
+            item.shootSpeed = 10f;
+
+            item.value = Item.sellPrice(silver: 10);
+            item.rare = 2;
+
+			item.useSound = SoundID.Item1;
+
+            item.GetGlobalItem<HelGlobalItem>().customRarity = 12;
+        }
+
+        public override void AddRecipes()
+        {
+            ModRecipe recipe = new ModRecipe(mod);
+
+            recipe.AddIngredient(ItemID.DirtBlock, 10);
+            recipe.AddIngredient(mod.ItemType("TemplateShard"), 10);
+
+            recipe.AddTile(TileID.WorkBenches);
+
+            recipe.SetResult(this);
+            recipe.AddRecipe();
+        }
+    }
+}
